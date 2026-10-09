@@ -1,0 +1,14 @@
+.embed-credit { display: none; }
+.embedded body { margin: 0; }
+.embedded .topbar, .embedded .breadcrumb, .embedded .hero,
+.embedded .section, .embedded .site-footer { display: none; }
+.embedded .page { max-width: none; width: 100%; margin: 0; padding: 0; }
+.embedded .map-card { border: 0; border-radius: 0; }
+.embedded .map-stage { height: calc(100dvh - 154px); min-height: 360px; }
+.embedded .controls { padding: 12px 16px; }
+.embedded .reach { margin: 0; padding: 6px 16px; }
+.embedded .embed-credit { display: block; margin: 0; padding: 6px 16px; font-size: 11px; color: #5c645e; }
+@media (max-width: 720px) {
+  .embedded .map-stage { height: 64dvh; min-height: 360px; }
+  .embedded .controls { gap: 10px; }
+}

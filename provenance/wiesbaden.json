@@ -1,0 +1,806 @@
+{
+  "city": "Wiesbaden",
+  "builtAt": "2026-10-09T13:16:23+00:00",
+  "referenceDate": "2026-10-13",
+  "serviceWindow": "7h–20h",
+  "gtfs": {
+    "network": "Bus Wiesbaden / RMV",
+    "dataset": "https://www.gtfs.de/en/feeds/de_nv/",
+    "source": "https://download.gtfs.de/germany/nv_free/latest.zip",
+    "how": "spatial-bus-subset",
+    "fetchedAt": "2026-10-09T13:11:48+00:00",
+    "bytes": 3309222,
+    "sha256": "ee9815f4cd9577b21fa58a949063ad82de0447bded8a68af6c74d92949c5a359",
+    "feedInfo": {
+      "feed_publisher_name": "gtfs.de - GTFS für Deutschland, Daten bereitgestellt von DELFI e.V.",
+      "feed_publisher_url": "http://gtfs.de",
+      "feed_lang": "de",
+      "feed_version": "latest-nv-free",
+      "feed_contact_email": "info@gtfs.de",
+      "feed_contact_url": "https://gtfs.de"
+    },
+    "servicePeriod": [
+      "2026-10-03",
+      "2026-11-02"
+    ]
+  },
+  "communes": {
+    "metropole": "Wiesbaden et communes voisines",
+    "source": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A180%5D%3Brelation%5B%22boundary%22%3D%22administrative%22%5D%5B%22admin_level%22~%22%5E%286%7C8%29%24%22%5D%5B%22name%22~%22%5E%28Wiesbaden%7CMainz%7CWalluf%7CBudenheim%29%24%22%5D%2849.9%2C8.0%2C50.2%2C8.5%29%3Bout+geom%3B",
+    "how": "download",
+    "fetchedAt": "2026-10-09T13:10:39+00:00",
+    "bytes": 171908,
+    "sha256": "2c8d275789f26265ce9104ecfb0c489419b72723e34d61ea875530a6f882f92f"
+  },
+  "openStreetMap": {
+    "licence": "ODbL, © contributeurs OpenStreetMap",
+    "riverContextSnapshot": null,
+    "osm_rail": {
+      "source": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A180%5D%3Brelation%5B%22route%22%3D%22bus%22%5D%2849.93%2C8.04%2C50.17%2C8.40%29%3Bout+geom%3B",
+      "how": "download",
+      "fetchedAt": "2026-10-09T13:14:26+00:00",
+      "bytes": 95867606,
+      "sha256": "20e7cb6dbb625d6a6d71aff0206f7c57cbab7482e373638bc95594fb008bf71e"
+    },
+    "osm_water_parks": {
+      "source": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A180%5D%3B%28way%5B%22natural%22%3D%22water%22%5D%2849.93%2C8.04%2C50.17%2C8.40%29%3Brelation%5B%22natural%22%3D%22water%22%5D%2849.93%2C8.04%2C50.17%2C8.40%29%3Bway%5B%22leisure%22%3D%22park%22%5D%2849.93%2C8.04%2C50.17%2C8.40%29%3Brelation%5B%22leisure%22%3D%22park%22%5D%2849.93%2C8.04%2C50.17%2C8.40%29%3B%29%3Bout+geom%3B",
+      "how": "download",
+      "fetchedAt": "2026-10-09T13:10:45+00:00",
+      "bytes": 1751242,
+      "sha256": "94609c81df52389861815152d7396faf5bf6191cfe1c14c0fe5d714a1963d1a9"
+    },
+    "osm_rivers": {
+      "source": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A180%5D%3Bway%5B%22waterway%22%3D%22river%22%5D%5B%22name%22~%22%5E%28Rhein%7CMain%29%24%22%5D%2849.93%2C8.04%2C50.17%2C8.40%29%3Bout+geom%3B",
+      "how": "download",
+      "fetchedAt": "2026-10-09T13:10:49+00:00",
+      "bytes": 33163,
+      "sha256": "7eb987dcc59aaffb22794260ae38ea1ec5f62243d3d252dafe8a840146ed9d85"
+    },
+    "osm_bridges": {
+      "source": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A180%5D%3Bway%5B%22bridge%22%5D%5B%22highway%22%5D%5B%22highway%22%21~%22%5E%28motorway%7Cmotorway_link%7Ctrunk%7Ctrunk_link%7Cconstruction%7Cproposed%29%24%22%5D%5B%22foot%22%21%3D%22no%22%5D%2849.98%2C8.08%2C50.055%2C8.40%29%3Bout+geom%3B",
+      "how": "download",
+      "fetchedAt": "2026-10-09T13:14:06+00:00",
+      "bytes": 326865,
+      "sha256": "97bb7581f2c05765cf4dd1507d8bbaefc4e5d5a6b02961f0cd5260e253dce68b"
+    }
+  },
+  "railGeometry": "OpenStreetMap",
+  "excludedRoutes": [],
+  "network": {
+    "lines": {
+      "bus": 102
+    },
+    "stops": 1139,
+    "railStations": 1139
+  },
+  "stats": {
+    "lines": [
+      {
+        "name": "1",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 24,
+        "headway": 10.1
+      },
+      {
+        "name": "3",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 35,
+        "headway": 15.0
+      },
+      {
+        "name": "4",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 41,
+        "headway": 10.0
+      },
+      {
+        "name": "5",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 63,
+        "headway": 10.4
+      },
+      {
+        "name": "6",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 46,
+        "headway": 5.0
+      },
+      {
+        "name": "8",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 36,
+        "headway": 10.2
+      },
+      {
+        "name": "9",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 38,
+        "headway": 15.0
+      },
+      {
+        "name": "E",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 26,
+        "headway": 30.0
+      },
+      {
+        "name": "14",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 52,
+        "headway": 10.0
+      },
+      {
+        "name": "15",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 57,
+        "headway": 10.0
+      },
+      {
+        "name": "16",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 41,
+        "headway": 10.1
+      },
+      {
+        "name": "17",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 36,
+        "headway": 10.3
+      },
+      {
+        "name": "18",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 46,
+        "headway": 10.3
+      },
+      {
+        "name": "20",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 18,
+        "headway": 22.3
+      },
+      {
+        "name": "21",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 30,
+        "headway": 11.3
+      },
+      {
+        "name": "22",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 47,
+        "headway": 26.0
+      },
+      {
+        "name": "23",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 55,
+        "headway": 10.3
+      },
+      {
+        "name": "24",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 52,
+        "headway": 10.1
+      },
+      {
+        "name": "26",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 11,
+        "headway": 30.0
+      },
+      {
+        "name": "27",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 42,
+        "headway": 10.4
+      },
+      {
+        "name": "28",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 39,
+        "headway": 15.0
+      },
+      {
+        "name": "33",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 49,
+        "headway": 14.7
+      },
+      {
+        "name": "34",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 15,
+        "headway": 30.0
+      },
+      {
+        "name": "37",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 42,
+        "headway": 24.4
+      },
+      {
+        "name": "39",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 36,
+        "headway": 15.0
+      },
+      {
+        "name": "44",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 29,
+        "headway": 30.0
+      },
+      {
+        "name": "45",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 48,
+        "headway": 14.4
+      },
+      {
+        "name": "46",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 41,
+        "headway": 30.0
+      },
+      {
+        "name": "47",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 38,
+        "headway": 30.0
+      },
+      {
+        "name": "48",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 31,
+        "headway": 22.3
+      },
+      {
+        "name": "49",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 32,
+        "headway": 23.6
+      },
+      {
+        "name": "54",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 42,
+        "headway": 15.0
+      },
+      {
+        "name": "55",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 25,
+        "headway": 26.9
+      },
+      {
+        "name": "56",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 49,
+        "headway": 15.0
+      },
+      {
+        "name": "57",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 38,
+        "headway": 14.9
+      },
+      {
+        "name": "58",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 33,
+        "headway": 15.0
+      },
+      {
+        "name": "60",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 33,
+        "headway": 15.0
+      },
+      {
+        "name": "62",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 49,
+        "headway": 7.5
+      },
+      {
+        "name": "63",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 30,
+        "headway": 30.0
+      },
+      {
+        "name": "64",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 42,
+        "headway": 15.0
+      },
+      {
+        "name": "65",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 22,
+        "headway": 15.0
+      },
+      {
+        "name": "66",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 22,
+        "headway": 10.0
+      },
+      {
+        "name": "67",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 26,
+        "headway": 30.0
+      },
+      {
+        "name": "68",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 47,
+        "headway": 15.0
+      },
+      {
+        "name": "69",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 34,
+        "headway": 30.0
+      },
+      {
+        "name": "70",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 26,
+        "headway": 15.0
+      },
+      {
+        "name": "71",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 35,
+        "headway": 15.0
+      },
+      {
+        "name": "74",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 35,
+        "headway": 15.0
+      },
+      {
+        "name": "75",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 11,
+        "headway": 30.0
+      },
+      {
+        "name": "76",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 40,
+        "headway": 15.0
+      },
+      {
+        "name": "78",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 38,
+        "headway": 15.3
+      },
+      {
+        "name": "79",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 35,
+        "headway": 30.0
+      },
+      {
+        "name": "80",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 60,
+        "headway": 15.0
+      },
+      {
+        "name": "81",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 30,
+        "headway": 15.0
+      },
+      {
+        "name": "90",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 44,
+        "headway": 10.0
+      },
+      {
+        "name": "91",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 61,
+        "headway": 10.0
+      },
+      {
+        "name": "92",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 42,
+        "headway": 10.0
+      },
+      {
+        "name": "93",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 54,
+        "headway": 10.0
+      },
+      {
+        "name": "E5",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 9,
+        "headway": 10.0
+      },
+      {
+        "name": "E6",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 23,
+        "headway": 30.0
+      },
+      {
+        "name": "E8",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 9,
+        "headway": 10.0
+      },
+      {
+        "name": "N2",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 48,
+        "headway": 10.0
+      },
+      {
+        "name": "N3",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 38,
+        "headway": 10.0
+      },
+      {
+        "name": "N4",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 36,
+        "headway": 10.0
+      },
+      {
+        "name": "N5",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 38,
+        "headway": 10.0
+      },
+      {
+        "name": "N9",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 33,
+        "headway": 10.0
+      },
+      {
+        "name": "171",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 34,
+        "headway": 30.0
+      },
+      {
+        "name": "262",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 15,
+        "headway": 15.0
+      },
+      {
+        "name": "269",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 14,
+        "headway": 30.0
+      },
+      {
+        "name": "271",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 23,
+        "headway": 30.0
+      },
+      {
+        "name": "272",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 43,
+        "headway": 30.0
+      },
+      {
+        "name": "273",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 48,
+        "headway": 30.0
+      },
+      {
+        "name": "274",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 45,
+        "headway": 30.0
+      },
+      {
+        "name": "275",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 43,
+        "headway": 30.0
+      },
+      {
+        "name": "611",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 16,
+        "headway": 30.0
+      },
+      {
+        "name": "612",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 13,
+        "headway": 30.0
+      },
+      {
+        "name": "613",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 14,
+        "headway": 30.0
+      },
+      {
+        "name": "614",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 13,
+        "headway": 30.0
+      },
+      {
+        "name": "625",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 9,
+        "headway": 30.0
+      },
+      {
+        "name": "626",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 9,
+        "headway": 30.0
+      },
+      {
+        "name": "630",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 17,
+        "headway": 13.2
+      },
+      {
+        "name": "640",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 9,
+        "headway": 15.9
+      },
+      {
+        "name": "652",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 14,
+        "headway": 30.0
+      },
+      {
+        "name": "653",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 16,
+        "headway": 30.0
+      },
+      {
+        "name": "654",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 26,
+        "headway": 30.0
+      },
+      {
+        "name": "656",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 14,
+        "headway": 30.0
+      },
+      {
+        "name": "660",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 16,
+        "headway": 15.9
+      },
+      {
+        "name": "E22",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 6,
+        "headway": 30.0
+      },
+      {
+        "name": "E47",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 28,
+        "headway": 10.0
+      },
+      {
+        "name": "E48",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 10,
+        "headway": 30.0
+      },
+      {
+        "name": "N10",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 46,
+        "headway": 10.0
+      },
+      {
+        "name": "N11",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 35,
+        "headway": 10.0
+      },
+      {
+        "name": "N12",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 37,
+        "headway": 10.0
+      },
+      {
+        "name": "N13",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 13,
+        "headway": 10.0
+      },
+      {
+        "name": "X26",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 10,
+        "headway": 30.0
+      },
+      {
+        "name": "X72",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 11,
+        "headway": 30.0
+      },
+      {
+        "name": "X76",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 25,
+        "headway": 30.0
+      },
+      {
+        "name": "X79",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 38,
+        "headway": 30.0
+      },
+      {
+        "name": "SEV50",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 36,
+        "headway": 9.5
+      },
+      {
+        "name": "SEV51",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 18,
+        "headway": 12.8
+      },
+      {
+        "name": "SEV52",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 14,
+        "headway": 9.8
+      },
+      {
+        "name": "SEV53",
+        "mode": "bus",
+        "color": "#888888",
+        "stations": 17,
+        "headway": 7.5
+      }
+    ],
+    "railStations": 1139,
+    "busLines": 0,
+    "center": "Wiesbaden Hauptbahnhof",
+    "within15": 7,
+    "within30": 24,
+    "farthestStation": "Eltville Bahnhof Bussteig B",
+    "farthestMinutes": 140,
+    "ogTrip": {
+      "name": "Wiesbaden, Weidenbornstr./JUVZ",
+      "lat": 50.06214,
+      "lon": 8.25288
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "communes_osm.json": {
+    "source": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A180%5D%3Brelation%5B%22boundary%22%3D%22administrative%22%5D%5B%22admin_level%22~%22%5E%286%7C8%29%24%22%5D%5B%22name%22~%22%5E%28Wiesbaden%7CMainz%7CWalluf%7CBudenheim%29%24%22%5D%2849.9%2C8.0%2C50.2%2C8.5%29%3Bout+geom%3B",
+    "how": "download",
+    "fetchedAt": "2026-10-09T13:10:39+00:00",
+    "bytes": 171908,
+    "sha256": "2c8d275789f26265ce9104ecfb0c489419b72723e34d61ea875530a6f882f92f"
+  },
+  "osm_water_parks.json": {
+    "source": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A180%5D%3B%28way%5B%22natural%22%3D%22water%22%5D%2849.93%2C8.04%2C50.17%2C8.40%29%3Brelation%5B%22natural%22%3D%22water%22%5D%2849.93%2C8.04%2C50.17%2C8.40%29%3Bway%5B%22leisure%22%3D%22park%22%5D%2849.93%2C8.04%2C50.17%2C8.40%29%3Brelation%5B%22leisure%22%3D%22park%22%5D%2849.93%2C8.04%2C50.17%2C8.40%29%3B%29%3Bout+geom%3B",
+    "how": "download",
+    "fetchedAt": "2026-10-09T13:10:45+00:00",
+    "bytes": 1751242,
+    "sha256": "94609c81df52389861815152d7396faf5bf6191cfe1c14c0fe5d714a1963d1a9"
+  },
+  "osm_rivers.json": {
+    "source": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A180%5D%3Bway%5B%22waterway%22%3D%22river%22%5D%5B%22name%22~%22%5E%28Rhein%7CMain%29%24%22%5D%2849.93%2C8.04%2C50.17%2C8.40%29%3Bout+geom%3B",
+    "how": "download",
+    "fetchedAt": "2026-10-09T13:10:49+00:00",
+    "bytes": 33163,
+    "sha256": "7eb987dcc59aaffb22794260ae38ea1ec5f62243d3d252dafe8a840146ed9d85"
+  },
+  "germany-local.zip": {
+    "source": "https://download.gtfs.de/germany/nv_free/latest.zip",
+    "how": "download",
+    "fetchedAt": "2026-10-09T13:11:47+00:00",
+    "bytes": 285516836,
+    "sha256": "9868bcfee127d048367340f06a3cb1eb2f52deb409915c1da89645957ec00b42"
+  },
+  "gtfs.zip": {
+    "source": "https://download.gtfs.de/germany/nv_free/latest.zip",
+    "how": "spatial-bus-subset",
+    "fetchedAt": "2026-10-09T13:11:48+00:00",
+    "bytes": 3309222,
+    "sha256": "ee9815f4cd9577b21fa58a949063ad82de0447bded8a68af6c74d92949c5a359"
+  },
+  "osm_bridges.json": {
+    "source": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A180%5D%3Bway%5B%22bridge%22%5D%5B%22highway%22%5D%5B%22highway%22%21~%22%5E%28motorway%7Cmotorway_link%7Ctrunk%7Ctrunk_link%7Cconstruction%7Cproposed%29%24%22%5D%5B%22foot%22%21%3D%22no%22%5D%2849.98%2C8.08%2C50.055%2C8.40%29%3Bout+geom%3B",
+    "how": "download",
+    "fetchedAt": "2026-10-09T13:14:06+00:00",
+    "bytes": 326865,
+    "sha256": "97bb7581f2c05765cf4dd1507d8bbaefc4e5d5a6b02961f0cd5260e253dce68b"
+  },
+  "osm_rail.json": {
+    "source": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A180%5D%3Brelation%5B%22route%22%3D%22bus%22%5D%2849.93%2C8.04%2C50.17%2C8.40%29%3Bout+geom%3B",
+    "how": "download",
+    "fetchedAt": "2026-10-09T13:14:26+00:00",
+    "bytes": 95867606,
+    "sha256": "20e7cb6dbb625d6a6d71aff0206f7c57cbab7482e373638bc95594fb008bf71e"
+  }
+}

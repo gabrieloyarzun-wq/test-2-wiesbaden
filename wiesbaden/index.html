@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TEST 2 · Accessibilité Wiesbaden</title>
+    <meta name="description" content="Carte des temps de trajet en bus à Wiesbaden : choisissez un départ, toute la ville se colore selon le temps qu&#x27;il faut pour y aller (réseau Bus Wiesbaden / RMV)." />
+
+    <link rel="canonical" href="https://gabrieloyarzun-wq.github.io/test-2-wiesbaden/wiesbaden/" />
+    <meta name="theme-color" content="#00a7b9" />
+    <link rel="icon" href="../test-2-icon.svg?v=1" type="image/svg+xml" />
+    <meta name="author" content="Camille Roux" />
+    <link rel="author" href="https://www.camilleroux.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="À portée de tram" />
+    <meta property="og:title" content="TEST 2" />
+    <meta property="og:description" content="Carte des temps de trajet en bus à Wiesbaden : choisissez un départ, toute la ville se colore selon le temps qu&#x27;il faut pour y aller (réseau Bus Wiesbaden / RMV)." />
+    <meta property="og:url" content="https://gabrieloyarzun-wq.github.io/test-2-wiesbaden/wiesbaden/" />
+    <meta property="og:image" content="https://gabrieloyarzun-wq.github.io/test-2-wiesbaden/og/wiesbaden.jpg?v=0" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Carte de Wiesbaden colorée selon le temps de trajet en bus depuis Wiesbaden Hauptbahnhof, avec les isochrones 15 et 30 minutes." />
+    <meta property="article:author" content="https://www.camilleroux.com/" />
+    <meta property="article:published_time" content="2026-10-09T08:00:00+02:00" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TEST 2" />
+    <meta name="twitter:description" content="Carte des temps de trajet en bus à Wiesbaden : choisissez un départ, toute la ville se colore selon le temps qu&#x27;il faut pour y aller (réseau Bus Wiesbaden / RMV)." />
+    <meta name="twitter:image" content="https://gabrieloyarzun-wq.github.io/test-2-wiesbaden/og/wiesbaden.jpg?v=0" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "name": "Wiesbaden à portée de bus",
+          "url": "https://gabrieloyarzun-wq.github.io/test-2-wiesbaden/wiesbaden/",
+          "description": "Carte des temps de trajet en bus à Wiesbaden : choisissez un départ, toute la ville se colore selon le temps qu'il faut pour y aller (réseau Bus Wiesbaden / RMV).",
+          "inLanguage": "fr",
+          "applicationCategory": "TravelApplication",
+          "operatingSystem": "Web",
+          "isAccessibleForFree": true,
+          "image": "https://gabrieloyarzun-wq.github.io/test-2-wiesbaden/og/wiesbaden.jpg",
+          "author": {
+            "@id": "https://www.camilleroux.com/#me"
+          },
+          "spatialCoverage": {
+            "@type": "Place",
+            "name": "Wiesbaden et communes voisines"
+          },
+          "isBasedOn": [
+            "https://castrio.me/nyc/",
+            "https://julesgrandin.github.io/paris-temps-transport/"
+          ],
+          "datePublished": "2026-10-09",
+          "dateModified": "2026-10-09"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "À portée de tram",
+              "item": "https://gabrieloyarzun-wq.github.io/test-2-wiesbaden/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Wiesbaden",
+              "item": "https://gabrieloyarzun-wq.github.io/test-2-wiesbaden/wiesbaden/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Combien de temps faut-il pour traverser Wiesbaden en bus ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depuis le centre (Wiesbaden Hauptbahnhof), 7 % des arrêts de bus sont à moins de 15 minutes et 24 % à moins de 30 minutes, marche et attente comprises. La plus éloignée, Eltville Bahnhof Bussteig B, est à environ 140 minutes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quelle est la fréquence des lignes de bus à Wiesbaden ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "En journée de semaine, l'intervalle moyen entre deux passages est de ligne 1 : 10,1 min, ligne 3 : 15 min, ligne 4 : 10 min, ligne 5 : 10,4 min, ligne 6 : 5 min, ligne 8 : 10,2 min, ligne 9 : 15 min, ligne E : 30 min, ligne 14 : 10 min, ligne 15 : 10 min, ligne 16 : 10,1 min, ligne 17 : 10,3 min, ligne 18 : 10,3 min, ligne 20 : 22,3 min, ligne 21 : 11,3 min, ligne 22 : 26 min, ligne 23 : 10,3 min, ligne 24 : 10,1 min, ligne 26 : 30 min, ligne 27 : 10,4 min, ligne 28 : 15 min, ligne 33 : 14,7 min, ligne 34 : 30 min, ligne 37 : 24,4 min, ligne 39 : 15 min, ligne 44 : 30 min, ligne 45 : 14,4 min, ligne 46 : 30 min, ligne 47 : 30 min, ligne 48 : 22,3 min, ligne 49 : 23,6 min, ligne 54 : 15 min, ligne 55 : 26,9 min, ligne 56 : 15 min, ligne 57 : 14,9 min, ligne 58 : 15 min, ligne 60 : 15 min, ligne 62 : 7,5 min, ligne 63 : 30 min, ligne 64 : 15 min, ligne 65 : 15 min, ligne 66 : 10 min, ligne 67 : 30 min, ligne 68 : 15 min, ligne 69 : 30 min, ligne 70 : 15 min, ligne 71 : 15 min, ligne 74 : 15 min, ligne 75 : 30 min, ligne 76 : 15 min, ligne 78 : 15,3 min, ligne 79 : 30 min, ligne 80 : 15 min, ligne 81 : 15 min, ligne 90 : 10 min, ligne 91 : 10 min, ligne 92 : 10 min, ligne 93 : 10 min, ligne E5 : 10 min, ligne E6 : 30 min, ligne E8 : 10 min, ligne N2 : 10 min, ligne N3 : 10 min, ligne N4 : 10 min, ligne N5 : 10 min, ligne N9 : 10 min, ligne 171 : 30 min, ligne 262 : 15 min, ligne 269 : 30 min, ligne 271 : 30 min, ligne 272 : 30 min, ligne 273 : 30 min, ligne 274 : 30 min, ligne 275 : 30 min, ligne 611 : 30 min, ligne 612 : 30 min, ligne 613 : 30 min, ligne 614 : 30 min, ligne 625 : 30 min, ligne 626 : 30 min, ligne 630 : 13,2 min, ligne 640 : 15,9 min, ligne 652 : 30 min, ligne 653 : 30 min, ligne 654 : 30 min, ligne 656 : 30 min, ligne 660 : 15,9 min, ligne E22 : 30 min, ligne E47 : 10 min, ligne E48 : 30 min, ligne N10 : 10 min, ligne N11 : 10 min, ligne N12 : 10 min, ligne N13 : 10 min, ligne X26 : 30 min, ligne X72 : 30 min, ligne X76 : 30 min, ligne X79 : 30 min, ligne SEV50 : 9,5 min, ligne SEV51 : 12,8 min, ligne SEV52 : 9,8 min, ligne SEV53 : 7,5 min. La ligne la plus fréquente est la 6, avec un passage toutes les 5 minutes environ."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "D'où viennent les horaires utilisés ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Des horaires théoriques publiés par le réseau Bus Wiesbaden / RMV (format GTFS, CC BY 4.0), téléchargés le 9 octobre 2026 et valables jusqu'au 2 novembre 2026. Les temps correspondent au mardi 13 octobre 2026, entre 7 h et 20 h."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Les bus sont-ils pris en compte à Wiesbaden ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, en option : cochez « Bus » sous la carte. Par défaut, seuls les bus sont affichés. L'attente aux arrêts de bus peu fréquentés est plafonnée à 15 minutes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Comment les temps de trajet sont-ils calculés ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pour chaque trajet : marche jusqu'à l'arrêt à 4,5 km/h, attente égale à la moitié de l'intervalle entre deux passages, durée prévue entre les arrêts, correspondances avec 1,5 minute de marche. Pas de temps réel ni de perturbations : c'est la ville « sur le papier »."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qui a réalisé cette carte de Wiesbaden ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "L'idée vient du NYC Transit Time Cartogram d'Anthony Castrio, adapté ensuite à Paris par Jules Grandin (« C'est encore loin ? »). Ces cartes sont réalisées par Camille Roux, développeur et co-fondateur de Human Coders à Montpellier, qui présente ses autres réalisations et sa veille tech hebdomadaire sur camilleroux.com. Le code est ouvert sur GitHub."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.camilleroux.com/#me",
+          "name": "Camille Roux",
+          "url": "https://www.camilleroux.com/",
+          "image": "https://www.camilleroux.com/content/images/size/w256h256/format/jpeg/2025/05/camillecouleur---lowres-2.jpg",
+          "jobTitle": "Développeur, co-fondateur de Human Coders",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Human Coders",
+            "url": "https://www.humancoders.com/"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Montpellier",
+            "addressCountry": "FR"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/camilleroux",
+            "https://x.com/CamilleRoux",
+            "https://bsky.app/profile/camilleroux.com",
+            "https://mastodon.social/@camilleroux",
+            "https://github.com/camilleroux"
+          ]
+        }
+      ]
+    }
+    </script>
+    <link rel="stylesheet" href="../fonts/inter.css" />
+    <link rel="stylesheet" href="../styles.css?v=9450789b" />
+    <link rel="stylesheet" href="../local-embed.css" />
+    <script src="../local-mode.js"></script>
+    <link rel="stylesheet" href="../insights-ui.css" />
+    <script defer src="../lucide.min.js"></script>
+    <script defer src="../insights-ui.js"></script>
+  </head>
+  <body>
+    <script id="city-config" type="application/json">{"slug": "wiesbaden", "name": "Wiesbaden", "dataVersion": "2d108158", "defaultFrom": {"lat": 50.0821, "lon": 8.2416, "label": "Wiesbaden Hauptbahnhof"}, "railNoun": "bus", "railStations": "arrêts de bus", "busNoun": "bus", "geocoder": "photon", "searchBbox": [49.93, 8.04, 50.17, 8.4]}</script>
+    <header class="topbar">
+      <nav class="topbar-inner" aria-label="Navigation principale">
+        <a class="brand" href="../"><img src="../favicon.svg" width="22" height="22" alt="" /> À portée de tram</a>
+        <div class="topbar-links">
+          <a class="topbar-link" href="../classements/">🏆 Classements</a>
+          <a class="topbar-link" href="https://www.camilleroux.com/" rel="author">camilleroux.com</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="../">À portée de tram</a> <span aria-hidden="true">›</span> <span aria-current="page">Wiesbaden</span>
+      </nav>
+
+      <section class="hero">
+        <h1><button id="cityTrigger" type="button" class="city-trigger" aria-haspopup="dialog" aria-expanded="false" title="Changer de ville">Wiesbaden<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5"/></svg></button> à portée de&nbsp;bus</h1>
+        <div id="cityPanel" class="city-panel" role="dialog" aria-label="Choisir une ville" hidden>
+          <div class="city-panel-head">
+            <input id="citySearch" type="search" placeholder="Rechercher une ville…" aria-label="Rechercher une ville" autocomplete="off" />
+            <button id="cityClose" type="button" class="icon-button" aria-label="Fermer">×</button>
+          </div>
+          <nav class="city-panel-list" aria-label="Villes">
+            <a class="city-item current" href="../wiesbaden/" aria-current="page" data-name="wiesbaden"><img src="../og/thumb-wiesbaden.jpg" width="120" height="63" alt="" loading="lazy" /><span><strong>Wiesbaden</strong><small>Bus · Bus Wiesbaden / RMV</small></span></a>
+          </nav>
+        </div>
+        <p class="lede">
+          La ville redessinée par le temps qu'il faut pour y aller en bus. Choisissez un départ&nbsp;: la carte se
+          colore selon le temps de trajet vers chaque point de Wiesbaden et ses environs.
+        </p>
+        <form id="searchForm" class="search" role="search" autocomplete="off">
+          <label class="visually-hidden" for="searchInput">Adresse de départ</label>
+          <input id="searchInput" type="search" placeholder="Partir d'une adresse… (ex. Wiesbaden Hauptbahnhof)" />
+          <button type="submit" class="button primary">Partir d'ici</button>
+          <ul id="searchResults" class="search-results" hidden></ul>
+        </form>
+        <ol class="steps" aria-label="Mode d'emploi">
+          <li><strong>1. Départ</strong> Cherchez une adresse ou glissez le point vert.</li>
+          <li><strong>2. Arrivée</strong> Cliquez n'importe où : durée et itinéraire détaillé.</li>
+          <li><strong>3. Lecture</strong> Vert = proche, rouge = loin. Lignes noires : 15 et 30 min.</li>
+        </ol>
+      </section>
+
+      <section class="map-card" aria-label="Carte des temps de trajet">
+        <noscript>
+          <p class="noscript">
+            Cette carte interactive a besoin de JavaScript pour calculer les temps de trajet. Activez-le pour l'utiliser.
+          </p>
+        </noscript>
+        <div id="mapStage" class="map-stage">
+          <canvas id="mapCanvas"></canvas>
+
+          <aside id="tripPanel" class="trip-panel" aria-live="polite">
+            <p class="trip-eyebrow">Départ</p>
+            <p id="tripFrom" class="trip-from">Chargement du réseau…</p>
+            <div id="tripResult" class="trip-result" hidden>
+              <div class="trip-row">
+                <p class="trip-eyebrow">Arrivée</p>
+                <button id="removeTo" type="button" class="link-button">Retirer</button>
+              </div>
+              <p id="tripTo" class="trip-to"></p>
+              <p id="tripDuration" class="trip-duration"></p>
+              <ol id="tripSteps" class="trip-steps"></ol>
+              <div id="heatFrom" class="segmented" role="group" aria-label="Point d'où part la carte">
+                <span>Carte depuis</span>
+                <button type="button" data-source="from" aria-pressed="true">le départ</button>
+                <button type="button" data-source="to" aria-pressed="false">l'arrivée</button>
+              </div>
+            </div>
+            <p id="tripHint" class="trip-hint">Cliquez sur la carte pour poser une arrivée.</p>
+          </aside>
+
+          <div class="map-buttons">
+            <button id="zoomIn" type="button" class="icon-button" aria-label="Zoomer">+</button>
+            <button id="zoomOut" type="button" class="icon-button" aria-label="Dézoomer">−</button>
+            <button id="recenter" type="button" class="icon-button" aria-label="Recentrer la carte">⌖</button>
+            <button id="fullscreen" type="button" class="icon-button" aria-label="Plein écran">⤢</button>
+          </div>
+
+          <label class="pill-toggle map-bus"><input id="busToggleMap" type="checkbox" /> Ajouter les bus</label>
+
+          <div class="legend" aria-hidden="true">
+            <div id="legendBar" class="legend-bar"></div>
+            <div class="legend-labels"><span>0</span><span id="legendMid"></span><span id="legendMax"></span></div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <div class="control-group">
+            <span class="control-label">Réseau</span>
+            <label class="pill-toggle"><input type="checkbox" checked disabled /> Bus</label>
+            <label class="pill-toggle"><input id="busToggle" type="checkbox" /> Bus</label>
+          </div>
+          <div id="isoToggles" class="control-group">
+            <span class="control-label">Isochrones</span>
+            <label class="pill-toggle"><input type="checkbox" value="15" checked /> 15 min</label>
+            <label class="pill-toggle"><input type="checkbox" value="30" checked /> 30 min</label>
+            <label class="pill-toggle"><input type="checkbox" value="45" /> 45 min</label>
+            <label class="pill-toggle"><input type="checkbox" value="60" /> 60 min</label>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="maxRange">Échelle</label>
+            <input id="maxRange" type="range" min="20" max="90" step="5" value="45" />
+            <output id="maxValue" for="maxRange">45 min</output>
+          </div>
+          <div class="control-group actions">
+            <button id="locate" type="button" class="button">Ma position</button>
+            <button id="swap" type="button" class="button">Inverser</button>
+            <button id="share" type="button" class="button primary">Partager</button>
+          </div>
+        </div>
+        <p id="reach" class="reach"></p>
+        <p class="embed-credit">Adaptation locale · <a href="https://github.com/camilleroux/montpellier-temps-transport" target="_blank" rel="noopener">Camille Roux / MIT</a> · IDFM / GTFS · © OpenStreetMap · <a href="../local-notice.html" target="_blank" rel="noopener">Données et licences</a></p>
+      </section>
+
+      <section class="section" aria-labelledby="stats-title">
+        <h2 id="stats-title">Wiesbaden en chiffres</h2>
+        <div class="stat-grid">
+          <div class="stat"><strong>24 %</strong><span>des arrêts de bus à moins de 30 min du centre (Wiesbaden Hauptbahnhof)</span></div>
+          <div class="stat"><strong>1139</strong><span>arrêts de bus</span></div>
+          <div class="stat"><strong>5 min</strong><span>entre deux passages sur la ligne 6, la plus fréquente</span></div>
+          <div class="stat"><strong>140 min</strong><span>depuis le centre pour rejoindre Eltville Bahnhof Bussteig B, la station la plus éloignée</span></div>
+        </div>
+        <table class="lines-table">
+          <caption>Lignes de bus du réseau Bus Wiesbaden / RMV, en journée de semaine</caption>
+          <thead><tr><th scope="col">Ligne</th><th scope="col">Stations</th><th scope="col">Un passage toutes les</th></tr></thead>
+          <tbody>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">1</span> </td><td>24</td><td>~10,1 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">3</span> </td><td>35</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">4</span> </td><td>41</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">5</span> </td><td>63</td><td>~10,4 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">6</span> </td><td>46</td><td>~5 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">8</span> </td><td>36</td><td>~10,2 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">9</span> </td><td>38</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">E</span> </td><td>26</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">14</span> </td><td>52</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">15</span> </td><td>57</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">16</span> </td><td>41</td><td>~10,1 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">17</span> </td><td>36</td><td>~10,3 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">18</span> </td><td>46</td><td>~10,3 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">20</span> </td><td>18</td><td>~22,3 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">21</span> </td><td>30</td><td>~11,3 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">22</span> </td><td>47</td><td>~26 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">23</span> </td><td>55</td><td>~10,3 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">24</span> </td><td>52</td><td>~10,1 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">26</span> </td><td>11</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">27</span> </td><td>42</td><td>~10,4 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">28</span> </td><td>39</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">33</span> </td><td>49</td><td>~14,7 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">34</span> </td><td>15</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">37</span> </td><td>42</td><td>~24,4 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">39</span> </td><td>36</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">44</span> </td><td>29</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">45</span> </td><td>48</td><td>~14,4 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">46</span> </td><td>41</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">47</span> </td><td>38</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">48</span> </td><td>31</td><td>~22,3 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">49</span> </td><td>32</td><td>~23,6 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">54</span> </td><td>42</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">55</span> </td><td>25</td><td>~26,9 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">56</span> </td><td>49</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">57</span> </td><td>38</td><td>~14,9 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">58</span> </td><td>33</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">60</span> </td><td>33</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">62</span> </td><td>49</td><td>~7,5 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">63</span> </td><td>30</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">64</span> </td><td>42</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">65</span> </td><td>22</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">66</span> </td><td>22</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">67</span> </td><td>26</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">68</span> </td><td>47</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">69</span> </td><td>34</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">70</span> </td><td>26</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">71</span> </td><td>35</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">74</span> </td><td>35</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">75</span> </td><td>11</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">76</span> </td><td>40</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">78</span> </td><td>38</td><td>~15,3 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">79</span> </td><td>35</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">80</span> </td><td>60</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">81</span> </td><td>30</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">90</span> </td><td>44</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">91</span> </td><td>61</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">92</span> </td><td>42</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">93</span> </td><td>54</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">E5</span> </td><td>9</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">E6</span> </td><td>23</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">E8</span> </td><td>9</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">N2</span> </td><td>48</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">N3</span> </td><td>38</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">N4</span> </td><td>36</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">N5</span> </td><td>38</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">N9</span> </td><td>33</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">171</span> </td><td>34</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">262</span> </td><td>15</td><td>~15 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">269</span> </td><td>14</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">271</span> </td><td>23</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">272</span> </td><td>43</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">273</span> </td><td>48</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">274</span> </td><td>45</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">275</span> </td><td>43</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">611</span> </td><td>16</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">612</span> </td><td>13</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">613</span> </td><td>14</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">614</span> </td><td>13</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">625</span> </td><td>9</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">626</span> </td><td>9</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">630</span> </td><td>17</td><td>~13,2 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">640</span> </td><td>9</td><td>~15,9 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">652</span> </td><td>14</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">653</span> </td><td>16</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">654</span> </td><td>26</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">656</span> </td><td>14</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">660</span> </td><td>16</td><td>~15,9 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">E22</span> </td><td>6</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">E47</span> </td><td>28</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">E48</span> </td><td>10</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">N10</span> </td><td>46</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">N11</span> </td><td>35</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">N12</span> </td><td>37</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">N13</span> </td><td>13</td><td>~10 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">X26</span> </td><td>10</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">X72</span> </td><td>11</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">X76</span> </td><td>25</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">X79</span> </td><td>38</td><td>~30 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">SEV50</span> </td><td>36</td><td>~9,5 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">SEV51</span> </td><td>18</td><td>~12,8 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">SEV52</span> </td><td>14</td><td>~9,8 min</td></tr>
+            <tr><td><span class="line-badge" style="background:#888888;color:#fff">SEV53</span> </td><td>17</td><td>~7,5 min</td></tr>
+          </tbody>
+        </table>
+
+      </section>
+
+      <section class="section" aria-labelledby="faq-title">
+        <h2 id="faq-title">Questions fréquentes</h2>
+        <details class="faq"><summary>Combien de temps faut-il pour traverser Wiesbaden en bus ?</summary><p>Depuis le centre (Wiesbaden Hauptbahnhof), 7 % des arrêts de bus sont à moins de 15 minutes et 24 % à moins de 30 minutes, marche et attente comprises. La plus éloignée, Eltville Bahnhof Bussteig B, est à environ 140 minutes.</p></details>
+        <details class="faq"><summary>Quelle est la fréquence des lignes de bus à Wiesbaden ?</summary><p>En journée de semaine, l&#x27;intervalle moyen entre deux passages est de ligne 1 : 10,1 min, ligne 3 : 15 min, ligne 4 : 10 min, ligne 5 : 10,4 min, ligne 6 : 5 min, ligne 8 : 10,2 min, ligne 9 : 15 min, ligne E : 30 min, ligne 14 : 10 min, ligne 15 : 10 min, ligne 16 : 10,1 min, ligne 17 : 10,3 min, ligne 18 : 10,3 min, ligne 20 : 22,3 min, ligne 21 : 11,3 min, ligne 22 : 26 min, ligne 23 : 10,3 min, ligne 24 : 10,1 min, ligne 26 : 30 min, ligne 27 : 10,4 min, ligne 28 : 15 min, ligne 33 : 14,7 min, ligne 34 : 30 min, ligne 37 : 24,4 min, ligne 39 : 15 min, ligne 44 : 30 min, ligne 45 : 14,4 min, ligne 46 : 30 min, ligne 47 : 30 min, ligne 48 : 22,3 min, ligne 49 : 23,6 min, ligne 54 : 15 min, ligne 55 : 26,9 min, ligne 56 : 15 min, ligne 57 : 14,9 min, ligne 58 : 15 min, ligne 60 : 15 min, ligne 62 : 7,5 min, ligne 63 : 30 min, ligne 64 : 15 min, ligne 65 : 15 min, ligne 66 : 10 min, ligne 67 : 30 min, ligne 68 : 15 min, ligne 69 : 30 min, ligne 70 : 15 min, ligne 71 : 15 min, ligne 74 : 15 min, ligne 75 : 30 min, ligne 76 : 15 min, ligne 78 : 15,3 min, ligne 79 : 30 min, ligne 80 : 15 min, ligne 81 : 15 min, ligne 90 : 10 min, ligne 91 : 10 min, ligne 92 : 10 min, ligne 93 : 10 min, ligne E5 : 10 min, ligne E6 : 30 min, ligne E8 : 10 min, ligne N2 : 10 min, ligne N3 : 10 min, ligne N4 : 10 min, ligne N5 : 10 min, ligne N9 : 10 min, ligne 171 : 30 min, ligne 262 : 15 min, ligne 269 : 30 min, ligne 271 : 30 min, ligne 272 : 30 min, ligne 273 : 30 min, ligne 274 : 30 min, ligne 275 : 30 min, ligne 611 : 30 min, ligne 612 : 30 min, ligne 613 : 30 min, ligne 614 : 30 min, ligne 625 : 30 min, ligne 626 : 30 min, ligne 630 : 13,2 min, ligne 640 : 15,9 min, ligne 652 : 30 min, ligne 653 : 30 min, ligne 654 : 30 min, ligne 656 : 30 min, ligne 660 : 15,9 min, ligne E22 : 30 min, ligne E47 : 10 min, ligne E48 : 30 min, ligne N10 : 10 min, ligne N11 : 10 min, ligne N12 : 10 min, ligne N13 : 10 min, ligne X26 : 30 min, ligne X72 : 30 min, ligne X76 : 30 min, ligne X79 : 30 min, ligne SEV50 : 9,5 min, ligne SEV51 : 12,8 min, ligne SEV52 : 9,8 min, ligne SEV53 : 7,5 min. La ligne la plus fréquente est la 6, avec un passage toutes les 5 minutes environ.</p></details>
+        <details class="faq"><summary>D&#x27;où viennent les horaires utilisés ?</summary><p>Des horaires théoriques publiés par le réseau Bus Wiesbaden / RMV (format GTFS, CC BY 4.0), téléchargés le 9 octobre 2026 et valables jusqu&#x27;au 2 novembre 2026. Les temps correspondent au mardi 13 octobre 2026, entre 7 h et 20 h.</p></details>
+        <details class="faq"><summary>Les bus sont-ils pris en compte à Wiesbaden ?</summary><p>Oui, en option : cochez « Bus » sous la carte. Par défaut, seuls les bus sont affichés. L&#x27;attente aux arrêts de bus peu fréquentés est plafonnée à 15 minutes.</p></details>
+        <details class="faq"><summary>Comment les temps de trajet sont-ils calculés ?</summary><p>Pour chaque trajet : marche jusqu&#x27;à l&#x27;arrêt à 4,5 km/h, attente égale à la moitié de l&#x27;intervalle entre deux passages, durée prévue entre les arrêts, correspondances avec 1,5 minute de marche. Pas de temps réel ni de perturbations : c&#x27;est la ville « sur le papier ».</p></details>
+        <details class="faq"><summary>Qui a réalisé cette carte de Wiesbaden ?</summary><p>L'idée vient du <a href="https://castrio.me/nyc/">NYC Transit Time Cartogram</a> d'Anthony Castrio, adapté ensuite à Paris par Jules Grandin (<a href="https://julesgrandin.github.io/paris-temps-transport/">C'est encore loin&nbsp;?</a>). Ces cartes sont réalisées par <a href="https://www.camilleroux.com/" rel="author">Camille Roux</a>, développeur et co-fondateur de Human Coders à Montpellier&nbsp;: découvrez <a href="https://www.camilleroux.com/realisations/">ses autres réalisations</a> et <a href="https://www.camilleroux.com/veille/">sa veille tech hebdomadaire</a>. Le code est ouvert sur <a href="https://github.com/camilleroux/montpellier-temps-transport">GitHub</a>.</p></details>
+      </section>
+
+      <section class="section" aria-labelledby="cities-title">
+        <h2 id="cities-title">Les autres villes</h2>
+        <div class="city-grid">
+
+        </div>
+        <aside class="follow-card" aria-label="Nouvelles villes">
+          <div class="follow-text">
+            <p class="follow-title">Suivre les nouvelles villes</p>
+            <p>Chaque nouvelle ville est annoncée sur X et LinkedIn. La vôtre n'est pas encore là&nbsp;?
+            <a href="https://github.com/camilleroux/montpellier-temps-transport/issues" rel="noopener">Proposez-la sur GitHub</a>.</p>
+          </div>
+          <div class="follow-actions">
+            <a class="button follow-x" href="https://x.com/CamilleRoux" rel="me noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg> Suivre sur X</a>
+            <a class="button follow-linkedin" href="https://www.linkedin.com/in/camilleroux" rel="me noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 4.9v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg> Suivre sur LinkedIn</a>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-author">
+          Un projet de <a href="https://www.camilleroux.com/" rel="author">Camille Roux</a>, développeur et co-fondateur de Human Coders,
+          à Montpellier, d'après l'idée d'Anthony Castrio et de Jules Grandin. Découvrez
+          <a href="https://www.camilleroux.com/realisations/">ses autres réalisations</a> et sa
+          <a href="https://www.camilleroux.com/veille/">veille tech hebdomadaire</a>.
+        </p>
+        <p class="footer-links">Villes&nbsp;: <a href="../wiesbaden/">Wiesbaden</a></p>
+        <p class="footer-links">
+          <a href="https://github.com/camilleroux/montpellier-temps-transport" rel="noopener">Code source sur GitHub</a> ·
+          <a href="https://github.com/camilleroux/montpellier-temps-transport/issues" rel="noopener">Proposer une ville ou signaler une erreur</a> ·
+          <a href="../classements/">Classements</a> ·
+          <a href="../mentions-legales/">Mentions légales et licences</a>
+        </p>
+        <p class="footer-credits">
+          Idée originale&nbsp;: le <a href="https://castrio.me/nyc/">NYC Transit Time Cartogram</a> d'Anthony Castrio,
+          adapté ensuite à Paris par Jules Grandin
+          (<a href="https://julesgrandin.github.io/paris-temps-transport/">C'est encore loin&nbsp;?</a>).
+          Horaires&nbsp;: <a href="https://www.gtfs.de/en/feeds/de_nv/">GTFS Bus Wiesbaden / RMV</a> (Wiesbaden et communes voisines). Fond de carte © <a href="https://www.openstreetmap.org/copyright">contributeurs OpenStreetMap</a>,
+          limites administratives OpenStreetMap, recherche d'adresse via
+          <a href="https://photon.komoot.io/">Photon</a> (komoot, données OpenStreetMap).
+          Données calculées publiées sous licence <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL</a>, code sous licence MIT.
+        </p>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" hidden></div>
+    <script type="module" src="../app.js?v=a3da9a02"></script>
+
+  </body>
+</html>
