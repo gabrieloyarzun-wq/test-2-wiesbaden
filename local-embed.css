@@ -12,3 +12,4 @@
   .embedded .map-stage { height: 64dvh; min-height: 360px; }
   .embedded .controls { gap: 10px; }
 }
+#share { display: none !important; }

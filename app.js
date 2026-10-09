@@ -20,10 +20,10 @@ const MODE_LABELS = {
   bhns: "BHNS",
   bus: "Bus",
 };
-const DEFAULT_MAX = 45;
+const DEFAULT_MAX = 25;
 const ISOCHRONE_OPTIONS = [15, 30, 45, 60];
 const DEFAULT_ISOCHRONES = [15, 30];
-const REACH_MINUTES = 30;
+const REACH_MINUTES = 25;
 // Au doigt, on vise moins précisément et un tap bouge souvent de quelques pixels.
 const MARKER_HIT_RADIUS = { mouse: 18, touch: 30 };
 const CLICK_SLOP = { mouse: 5, touch: 12 };
@@ -1493,6 +1493,31 @@ document.addEventListener("click", (event) => {
   if (!$("searchForm").contains(event.target)) searchResults.hidden = true;
 });
 
+/** Vue d'ouverture : cadre la zone accessible dans la durée maximale autour du départ. */
+function focusOnReach() {
+  const source = heatSource();
+  if (!source || !app.heatSolution) return;
+  let [minX, minY] = source.point;
+  let [maxX, maxY] = source.point;
+  app.data.stations.forEach((station, index) => {
+    if (!(app.heatSolution.stationTime[index] <= app.maxMinutes)) return;
+    minX = Math.min(minX, station.point[0]);
+    minY = Math.min(minY, station.point[1]);
+    maxX = Math.max(maxX, station.point[0]);
+    maxY = Math.max(maxY, station.point[1]);
+  });
+  const { width, height } = app.size;
+  const pad = width < 720 ? 16 : 48;
+  const spanX = Math.max(maxX - minX, 2000) * 1.08;
+  const spanY = Math.max(maxY - minY, 2000) * 1.08;
+  const { fitScale } = app.view;
+  const scale = Math.min((width - pad * 2) / spanX, (height - pad * 2) / spanY);
+  app.view.scale = clamp(scale, fitScale, fitScale * MAX_ZOOM_FACTOR);
+  app.view.cx = (minX + maxX) / 2;
+  app.view.cy = (minY + maxY) / 2;
+  requestRender();
+}
+
 // --- Démarrage ----------------------------------------------------------------
 
 async function init() {
@@ -1506,6 +1531,7 @@ async function init() {
   app.size.width = 0;
   resize();
   restoreFromUrl();
+  focusOnReach();
   new ResizeObserver(resize).observe(canvas);
 }
 
