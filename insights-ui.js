@@ -30,7 +30,7 @@
         <div id="rightContent" class="sidebar-content">
           <section class="sidebar-section"><h2>${icon("clock-3")}Temps de trajet</h2><div id="durationSlot"></div></section>
           <section class="sidebar-section appearance-section"><h2>${icon("sliders-horizontal")}Affichage</h2><div id="appearanceSliders"></div><button type="button" id="resetAppearance" class="reset-appearance">${icon("rotate-ccw")}Rétablir l'affichage</button></section>
-          <section class="sidebar-section accessibility-section"><h2>${icon("chart-no-axes-combined")}Accessibilité</h2><div class="reach-heading"><strong id="reachNumber">—</strong><span>en moins de 30 min</span></div><div id="reachSlot"></div><span class="metric-note">Arrêts de bus · estimation</span></section>
+          <section class="sidebar-section accessibility-section"><h2>${icon("chart-no-axes-combined")}Accessibilité</h2><div class="reach-heading"><strong id="reachNumber">—</strong><span>en moins de 25 min</span></div><div id="reachSlot"></div><span class="metric-note">Arrêts de bus · estimation</span></section>
         </div>
       </aside>
     </div>`;
